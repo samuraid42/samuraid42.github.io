@@ -10,11 +10,41 @@
 - title: Work Experience
   type: time_table
   contents:
-    - title: Robotics Engineer
+    - title: AI Research Engineer
       institution: Agile Robots SE <a href="https://www.agile-robots.com/en/"><i class="fa-solid fa-robot"></i></a>
-      department: AI & Perception Team
+      department: Generalist Robotic Foundation Models Team
       location: Munich, Germany
-      year: July 2024 - Present
+      year: July 2025 - Present
+      description:
+        - title: VLA Modeling & Performance
+          contents:
+          - Exploring and testing novel performance enhancements for Vision-Language-Action (VLA) models, specifically focusing on Action Expert improvements through action-chunk smoothing techniques like RTC, train-RTC, VLASH, and A2C2.
+          - Investigating cross-embodiment pre-training strategies (HiMoE, X-VLA) and evaluating State-of-the-Art (SOTA) architectures, including <a href="https://www.physicalintelligence.company/blog/pi0">pi0</a>, GR00T-series, <a href="https://huggingface.co/blog/smolvla">smolVLA</a>, and FLOWER, utilizing Diffusion Transformers and Flow Matching frameworks.
+        - title: Robotic Application & Middleware
+          contents:
+          - Adapted the data collection and Reactive Diffusion Policy inference framework to support a new hardware stack: Thor robot arm with DH gripper, SRI force-torque sensor, and Intel RealSense D405.
+          - Re-engineered the teleoperation and inference pipeline from Meta Quest 3 to SpaceMouse input, utilizing a multi-processing architecture built on top of the ROS2 middleware.
+        - title: Industrial Use-Case Development
+          contents:
+          - Developed and validated an industrial Proof of Concept (PoC) for high-voltage plug picking and insertion tasks.
+          - Implemented precision sensor integration, replacing GelSight mini and built-in FT sensors with SRI force-torque sensing to handle high-accuracy industrial requirements.
+    - title: Robotics Research Engineer
+      institution: Agile Robots SE <a href="https://www.agile-robots.com/en/"><i class="fa-solid fa-robot"></i></a>
+      department: Intelligent Precision Assembly Team
+      location: Munich, Germany
+      year: July 2024 - June 2025
+      description:
+        - title: Planning & Control
+          contents:
+          - Integrated **KOMO** (k-order Markov Path Optimization) and the **Robotic Control Interface & Manipulation Planning Library** into a unified C++/Python framework to enable optimization-based motion planning.
+          - Bridged the high-level planning framework with **Agile Robots’ Thor** manipulators by interfacing with the Diana API for real-time Diana-driven execution.
+          - Developed a custom **Linear Cartesian Motion** feature by formulating task-specific objectives and utilizing skew-symmetric matrix multiplication (vector cross-product equivalent) to handle orientation constraints during linear trajectories.
+          - Validated the end-to-end framework on an industrial plug insertion task, ensuring robust execution under constrained optimization parameters.
+        - title: Perception & Calibration
+          contents:
+          - Developed a proprietary 6D pose estimator by combining learning-based correspondence matching (**SuperGlue**, **COTR**, **LoFTR**) with the **M3T** (Multi-body/Modality/Camera Tracking) algorithm.
+          - Conducted a comparative evaluation of traditional hand-eye calibration methods (dual/double quaternions, axis-angle representation) against recent **closed-form two-stage** rotation/translation matrix methods.
+          - Improved robotic grasping precision by implementing a **gripper pose refinement** task, leveraging optimized calibration results to reduce spatial error in perception-to-action loops.
 
     - title: Graduate Research Assistant
       institution: University of Washington + Amazon Science Hub <a href="https://www.sciencehub.uw.edu/"><i class="fa-brands fa-amazon"></i></a>
